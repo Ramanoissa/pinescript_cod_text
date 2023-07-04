@@ -1,5 +1,14 @@
 import numpy as np
 import pandas as pd
+import binance.client
+from binance.client import Client
+
+
+pkey= "api_key"
+
+skey= "secret_key"
+
+client= Client(api_key=pkey, api_secret=skey)
 
 def add_to_array(apointer1, apointer2, val):
     apointer1.insert(0, val)
